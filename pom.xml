@@ -15,9 +15,12 @@
         <scala.version.majorMinor>2.11</scala.version.majorMinor>
         <scala.version.build>8</scala.version.build>
         <scala.version>${scala.version.majorMinor}.${scala.version.build}</scala.version>
+        <avro.version>1.7.7</avro.version>
+        <joda-time.version>2.9.3</joda-time.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>com.datastax.dse</groupId>
             <artifactId>dse-spark-dependencies</artifactId>
@@ -41,6 +44,18 @@
                     <artifactId>solr-solrj</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>${avro.version}</version>
         </dependency>
     </dependencies>
 
